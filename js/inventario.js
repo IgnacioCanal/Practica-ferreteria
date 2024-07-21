@@ -7,7 +7,7 @@ class Producto {
       'Efectivo y QR'
     ]
     this.nombre = nombre
-    this.precio = '$' + precio.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+    this.precio = precio
     this.id = id_productos++
     this.stock = Math.ceil(Math.random()*(50-5)+5)
     this.metodo_de_pago = metododepago[metodo_de_pago]
